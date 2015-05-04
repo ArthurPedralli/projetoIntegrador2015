@@ -4,8 +4,13 @@
 	<title></title>
 	<style type="text/css">
 	.navbar-default {
-    	background-color: #FFFFFF;
-    	border-color: #E7E7E7;
+    	background-color: #58FA58;
+	}
+	.navbar-default .navbar-header .navbar-brand{
+    	color: #FFFFFF;
+	}
+	.navbar-default .navbar-nav > li > a {
+    	color: #FFFFFF;
 	}
 	</style>
 </head>
@@ -19,8 +24,8 @@
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li><a href="">Vídeos sobre Segurança</a></li>
-							<li><a href="">Dicas de Segurança</a></li>
+							<li><a href="./videosSeguranca.php">Vídeos sobre Segurança</a></li>
+							<li><a href="./dicasSeguranca.php">Dicas de Segurança</a></li>
 							<!-- <form class="navbar-form navbar-left" role="search" method="POST">
 								<div class="form-group">
 									<input type="text" class="form-control" name="procura" id="procura" placeholder="Search">
