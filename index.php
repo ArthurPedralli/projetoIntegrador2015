@@ -20,14 +20,14 @@ include("menu.php");
 		<div class="row">
 			<div class="container-fluid">
 				<div class="titulo">
-					<p>Controle TESTE PRIMEIRO COMMIT</p>
+					<p>Controle Acadêmico</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="container-fluid">
 				<div class="titulo">
-					<p>Controle Acadêmico MARcEl</p>
+					<p>Controle Acadêmico</p>
 				</div>
 			</div>
 		</div>
