@@ -27,7 +27,7 @@ include("menu.php");
 		<div class="row">
 			<div class="container-fluid">
 				<div class="titulo">
-					<p>Controle Acadêmico</p>
+					<p>Controle Acadêmico MARcEl</p>
 				</div>
 			</div>
 		</div>
