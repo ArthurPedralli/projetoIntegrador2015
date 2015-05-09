@@ -20,7 +20,7 @@ include("menu.php");
 		<div class="row">
 			<div class="container-fluid">
 				<div class="titulo">
-					<p>Controle Acadêmico</p>
+					<p>Controle TESTE PRIMEIRO COMMIT</p>
 				</div>
 			</div>
 		</div>
