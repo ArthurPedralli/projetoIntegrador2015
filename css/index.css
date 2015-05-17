@@ -1,20 +1,12 @@
-.text_formulario > tr{
-	margin-top: 10px;
 
-}
-
-.label_formulario{
-	margin-top: 100px;	
-}
-
-.text_formulario{
-	margin-top: 10px;
+.tabela{
+	margin-top: 80px;	
 }
 
 
 .botaoConfirmacao{
-	margin-top: 10px;
-	margin-left: 595px;
+	margin-top: 15px;
+	/*margin-left: 595px;*/
 }
 
 .mapa{

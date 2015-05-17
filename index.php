@@ -2,24 +2,17 @@
 include("cabecalho.php");
 include("menu.php");  
 ?>
-	<!DOCTYPE html>
-	<html>
-		<head> 
-			<title>Rota Fácil</title>
-			<link type="text/css" rel="stylesheet" href="./css/index.css"/>
-		</head>
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script type="text/javascript" language = "javascript" src="./script/index.js"></script>
-        
-        </script>
+	
+<link type="text/css" rel="stylesheet" href="./css/index.css"/>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" language = "javascript" src="./script/index.js"></script>
 
-
-        
-		<body>
-			<div class="row">
-				<div class="container-fluid">
+	<div class="row">
+		<div class="container-fluid">
+			<div class="tabela">
+				
+				<div class="col-md-12">	
 					<table width="100%" border="0">
-						<div class="label_formulario">
 							<tr>
 								<div class="form-group">
 									<td>
@@ -30,69 +23,71 @@ include("menu.php");
 									</td>
 								</div>
 							</tr>
-							
-						</div>
-						<div class="text_formulario">
+
 							<tr>
-						        <div class="form-group">
-							        <td>
-							        	<input placeholder = "São Paulo - SP" type="text" id="txtOrigem" class="form-control" style="width: 500px" />
-							        </td>
-							        <td>
-							        	<input placeholder = "Rio de Janeiro - RJ" type="text" style="width: 500px"  class="form-control" id="txtDestino" />
-							        </td>
-						        </div>        
+						        <td>
+						        	<input placeholder = "São Paulo - SP / Rua Oscar Freire, São Paulo - SP" type="text" id="txtOrigem" class="form-control" style="width: 500px" />
+						        </td>
+						        <td>
+						        	<input placeholder = "Rio de Janeiro - RJ / Rua da Conceição, Rio de Janeiro - RJ" type="text" style="width: 500px"  class="form-control" id="txtDestino" />
+						        </td>
 							</tr>
-							<tr>
-
-								<td>
-									
-									<label for="txtConsumo">Consumo do veículo (KM/L): </label>
-								</td>
-
-								<td>
-									
-									<label for="txtPrecoCombustivel">Preço do combustível (R$): </label>
-								</td>
-								
-
-
-							</tr>
-							<tr>
-								
-								<td>
-									<input type="text" id="txtConsumo" class="form-control" style="width: 100px" />
-								</td>
-
-								<td>
-									<input  type="text" id="txtPrecoCombustivel" class="form-control" style="width: 100px" />
-								</td>							
-
-							</tr>
-						</div>
-						<div class="botaoConfirmacao">
-							<tr>
-						    	<div>
-							    	<td height="60">
-							        	<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" />
-							    	</td>
-						    	</div>         
-							</tr>
-						</div>
 					</table>
 				</div>
+
+				<div class="col-md-12">	
+					<table width="100%" border="0">
+						<tr height="30">
+							<td>
+								<label for="txtConsumo">Consumo do veículo (KM/L): </label>
+							</td>
+							<td>
+								<label for="txtPrecoCombustivel">Preço do combustível (R$): </label>
+							</td>
+						</tr>
+
+						<tr>
+							<div class="form-group">
+								<td>
+									<input type="text" id="txtConsumo" class="form-control" style="width: 500px" />
+								</td>
+								<td>
+									<input  type="text" id="txtPrecoCombustivel" class="form-control" style="width: 500px" />
+								</td>	
+							</div>						
+						</tr>
+					</table>
+				</div>
+
+				<div class="col-md-12">	
+					<div class="botaoConfirmacao">
+						<tr>
+					    	<div>
+						    	<td height="60">
+						        	<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" />
+						    	</td>
+					    	</div>         
+						</tr>
+					</div>
+				</div>
+
 			</div>
-			<div class="row">
-				<div><span id="litResultado">&nbsp;</span></div>
-			</div>
-			<div class="row">
-				<div class="mapa" >
-	            	<iframe width="100%" scrolling="no" height="500" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
-	            	<!----<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
-	        	</div>
-			</div>
-		</body>
-	</html>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div><span id="litResultado">&nbsp;</span></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="mapa" >
+	        	<iframe width="100%" scrolling="no" height="500" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
+	        	<!----<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
+	    	</div>
+		</div>
+	</div>
+
 <?php
 include("rodape.php");
 ?>
