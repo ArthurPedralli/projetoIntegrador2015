@@ -1,8 +1,13 @@
-.origem{
+.text_formulario > tr{
+	margin-top: 10px;
+
+}
+
+.label_formulario{
 	margin-top: 100px;	
 }
 
-.destino{
+.text_formulario{
 	margin-top: 10px;
 }
 

@@ -5,56 +5,21 @@ include("menu.php");
 	<!DOCTYPE html>
 	<html>
 		<head> 
-			<title></title>
+			<title>Rota Fácil</title>
 			<link type="text/css" rel="stylesheet" href="./css/index.css"/>
 		</head>
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script type="text/javascript">
-            function CalculaDistancia() {
-                $('#litResultado').html('Aguarde...');
-                //Instanciar o DistanceMatrixService
-                var service = new google.maps.DistanceMatrixService();
-                //executar o DistanceMatrixService
-                service.getDistanceMatrix(
-                  {
-                      //Origem
-                      origins: [$("#txtOrigem").val()],
-                      //Destino
-                      destinations: [$("#txtDestino").val()],
-                      //Modo (DRIVING | WALKING | BICYCLING)
-                      travelMode: google.maps.TravelMode.DRIVING,
-                      //Sistema de medida (METRIC | IMPERIAL)
-                      unitSystem: google.maps.UnitSystem.METRIC
-                      //Vai chamar o callback
-                  }, callback);
-            }
-            //Tratar o retorno do DistanceMatrixService
-            function callback(response, status) {
-                //Verificar o Status
-                if (status != google.maps.DistanceMatrixStatus.OK)
-                    //Se o status não for "OK"
-                    $('#litResultado').html(status);
-                else {
-                    //Se o status for OK
-                    //Endereço de origem = response.originAddresses
-                    //Endereço de destino = response.destinationAddresses
-                    //Distância = response.rows[0].elements[0].distance.text
-                    //Duração = response.rows[0].elements[0].duration.text
-                    $('#litResultado').html("<strong>Origem</strong>: " + response.originAddresses +
-                        "<br /><strong>Destino:</strong> " + response.destinationAddresses +
-                        "<br /><strong>Distância</strong>: " + response.rows[0].elements[0].distance.text +
-                        " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text
-                        );
-                    //Atualizar o mapa
-                    $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
-                }
-            }
+		<script type="text/javascript" language = "javascript" src="./script/index.js"></script>
+        
         </script>
+
+
+        
 		<body>
 			<div class="row">
 				<div class="container-fluid">
 					<table width="100%" border="0">
-						<div class="origem">
+						<div class="label_formulario">
 							<tr>
 								<div class="form-group">
 									<td>
@@ -65,17 +30,44 @@ include("menu.php");
 									</td>
 								</div>
 							</tr>
+							
 						</div>
-						<div class="destino">
+						<div class="text_formulario">
 							<tr>
 						        <div class="form-group">
 							        <td>
-							        	<input type="text" id="txtOrigem" class="form-control" style="width: 500px" />
+							        	<input placeholder = "São Paulo - SP" type="text" id="txtOrigem" class="form-control" style="width: 500px" />
 							        </td>
 							        <td>
-							        	<input type="text" style="width: 500px"  class="form-control" id="txtDestino" />
+							        	<input placeholder = "Rio de Janeiro - RJ" type="text" style="width: 500px"  class="form-control" id="txtDestino" />
 							        </td>
 						        </div>        
+							</tr>
+							<tr>
+
+								<td>
+									
+									<label for="txtConsumo">Consumo do veículo (KM/L): </label>
+								</td>
+
+								<td>
+									
+									<label for="txtPrecoCombustivel">Preço do combustível (R$): </label>
+								</td>
+								
+
+
+							</tr>
+							<tr>
+								
+								<td>
+									<input type="text" id="txtConsumo" class="form-control" style="width: 100px" />
+								</td>
+
+								<td>
+									<input  type="text" id="txtPrecoCombustivel" class="form-control" style="width: 100px" />
+								</td>							
+
 							</tr>
 						</div>
 						<div class="botaoConfirmacao">
@@ -94,8 +86,9 @@ include("menu.php");
 				<div><span id="litResultado">&nbsp;</span></div>
 			</div>
 			<div class="row">
-				<div class="mapa">
-	            	<iframe width="100%" scrolling="no" height="350" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
+				<div class="mapa" >
+	            	<iframe width="100%" scrolling="no" height="500" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
+	            	<!----<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
 	        	</div>
 			</div>
 		</body>
