@@ -14,7 +14,7 @@
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li><a href="./videosSeguranca.php">Vídeos sobre Segurança</a></li>
+							<!--<li><a href="./videosSeguranca.php">Vídeos sobre Segurança</a></li>-->
 							<li><a href="./dicasSeguranca.php">Dicas de Segurança</a></li>
 							<!-- <form class="navbar-form navbar-left" role="search" method="POST">
 								<div class="form-group">
