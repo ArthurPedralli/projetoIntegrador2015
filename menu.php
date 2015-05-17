@@ -2,17 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<style type="text/css">
-	.navbar-default {
-    	background-color: #58FA58;
-	}
-	.navbar-default .navbar-header .navbar-brand{
-    	color: #FFFFFF;
-	}
-	.navbar-default .navbar-nav > li > a {
-    	color: #FFFFFF;
-	}
-	</style>
+	<link type="text/css" rel="stylesheet" href="./css/menu.css"/>
 </head>
 <body>
 	<div class="row">
