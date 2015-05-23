@@ -29,7 +29,8 @@
 		            </li>
 	          	</ul>
 	            <ul class="nav navbar-nav navbar-right">
-	            	<li><a href="./duvidasSugestoes.php">Dúvidas e Sugestões</a></li>
+	            	<li><a href="#">Dúvidas e Sugestões</a></li>
+	            	<!-- ./duvidasSugestoes.php -->
 	            </ul>
 	        </div>
 	    </div>

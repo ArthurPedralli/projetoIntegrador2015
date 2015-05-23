@@ -13,11 +13,11 @@ include("menu.php");
 				<div class="row">
 					<div class="col-md-12 form-group">	
 						<div class="col-md-6">
-				        	<label for="txtOrigem">Endereço de origem: </label>
+				        	<label for="txtDestino">Endereço de origem: </label>
 		        			<input placeholder = "Rio de Janeiro - RJ / Rua da Conceição, Rio de Janeiro - RJ" type="text"  class="form-control" id="txtDestino" />
 						</div>	
 						<div class="col-md-6">
-						    <label for="txtDestino">Endereço de destino: </label>
+						    <label for="txtOrigem">Endereço de destino: </label>
 				        	<input placeholder = "São Paulo - SP / Rua Oscar Freire, São Paulo - SP" type="text" id="txtOrigem" class="form-control" />
 						</div>
 					</div>
