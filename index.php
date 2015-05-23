@@ -46,7 +46,11 @@ include("menu.php");
 
 	
 				<div class="row">
-					<div><span id="litResultado">&nbsp;</span></div>
+					<div class="col-md-12">
+						<div class= "col-md-6">
+							<div><span id="litResultado">&nbsp;</span></div>
+						</div>
+					</div>
 				</div>
 
 				<div class="row">

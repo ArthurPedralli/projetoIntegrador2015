@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="./lib/font/css/font.min.css"></link>
 	<style type="text/css">
 	.tabela{
-		margin-top: 3%;
+		margin-top: 3%
 	}
 	</style>
 

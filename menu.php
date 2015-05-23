@@ -13,8 +13,10 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
+
 	          </button>
 	          <a class="navbar-brand" href="./index.php">Calcule sua Rota</a>
+
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
@@ -34,11 +36,18 @@
 				-->              
 	              </ul>
 	            </li>
+	           
 	          </ul>
 	        </div>
+
+
+
+
 	    </div>
+	    
 	</nav> 
-	 <!-- <div class="row">
+	 
+	<!-- <div class="row">
 		<div class="col-md-12">
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
