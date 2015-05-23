@@ -38,7 +38,9 @@ include("menu.php");
 				
 				<div class="row">
 					<div class="col-md-12 form-group">	
-						<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" />
+						<div class= "col-md-6">
+							<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" />
+						</div>
 					</div>
 				</div>
 
@@ -50,9 +52,10 @@ include("menu.php");
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<div class="mapa" >
-				        	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
-				        	<!----<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
-				    	</div>
+					      	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
+					       	<!----<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
+					    </div>
+					    
 					</div>
 				</div>
 			</div>
