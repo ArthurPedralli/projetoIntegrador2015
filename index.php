@@ -27,11 +27,11 @@ include("menu.php");
 					<div class="col-md-12 form-group">
 						<div class="col-md-6">
 							<label for="txtConsumo">Consumo do veículo (KM/L): </label>
-							<input type="text" id="txtConsumo" class="form-control" />
+							<input placeholder = "12.4" type="text" id="txtConsumo" class="form-control" />
 						</div>
 						<div class="col-md-6">
 							<label for="txtPrecoCombustivel">Preço do combustível (R$): </label>
-							<input  type="text" id="txtPrecoCombustivel" class="form-control" />
+							<input placeholder= "3.23" type="text" id="txtPrecoCombustivel" class="form-control" />
 						</div>
 					</div>
 				</div>

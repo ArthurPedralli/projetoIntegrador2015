@@ -1,12 +1,23 @@
   function CalculaDistancia() {
     if(document.getElementById("txtOrigem").value == "") {
       alert("O campo 'Origem' deve estar preenchido!");
+      document.getElementById("txtOrigem").focus();
 
     }
     else if(document.getElementById("txtDestino").value == "") {
       alert("O campo 'Destino' deve estar preenchido!");
+      document.getElementById("txtDestino").focus();
     }
-    else {
+    else if(document.getElementById("txtConsumo").value == "") {
+      alert("O campo 'Consumo' deve estar preenchido!");
+      document.getElementById("txtConsumo").focus();
+    }
+    else if(document.getElementById("txtPrecoCombustivel").value == "") {
+      alert("O campo 'Preço do combustível' deve estar preenchido!");
+      document.getElementById("txtPrecoCombustivel").focus();
+    }
+
+    else {  
 
       $('#litResultado').html('Aguarde...');
       //Instanciar o DistanceMatrixService
