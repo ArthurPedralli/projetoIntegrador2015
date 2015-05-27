@@ -3,23 +3,133 @@ include("cabecalho.php");
 include("menu.php");  
 ?>
 
-		<link type="text/css" rel="stylesheet" href="./css/dicasSeguranca.css"/>
-
-		<div class="cabecalheDiscasDeSeguranca">
-			<div class="col-md-12">
-				<h2>REDOBRE A ATENÇÃO AO DIRIGIR À NOITE!</h2>
-				<p><h4>Dirigir no período da noite requer atenção redobrada dos motoristas. 
-				Os perigos estão relacionados à iluminação, cansaço, condições das estradas e imprudência. 
-				Em razão do menor número de veículos circulando à noite, muitos condutores aproveitam para dirigir em alta velocidade. 
-				Algumas condições adversas, que seriam mais facilmente identificadas durante o dia, ficam escondidas nesse período, como buracos na estrada e até mesmo animais cruzando a pista. 
-				Por isso, dirigir em alta velocidade aumenta as chances de que o condutor não perceba ou veja muito em cima da hora esses perigos e acabe envolvido em um acidente.
-				Muitas rodovias têm grandes trechos sem iluminação pública, o que faz com que o condutor tenha que se guiar somente por seus faróis. É muito importante manter as luzes do carro sempre em boas condições para que todos possam ver e serem vistos.
-				É preciso também que o motorista use corretamente a regulagem dos faróis baixos, pois existem condutores que podem ficar cegos por um curto período de tempo quando encaram uma luz brilhante nos olhos, aumentando a chance de um acidente. O farol alto só deve ser usado quando realmente necessário, para não prejudicar os outros.
-				Outro ponto de extrema importância é o cansaço. No período da noite a probabilidade de que o motorista durma ao volante é muito mais alta. Por isso, as viagens à noite devem ser programadas para que o condutor tenha momentos de descanso. Se estiver dirigindo e se sentir cansado, pare e descanse! Você pode dormir sem nem ao menos perceber e colocar a sua vida e dos demais usuários das vias em risco.
-				A prevenção é a maior aliada da segurança! Seja prudente e preserve a vida!</h4></p>
-				<button class="btn btn-primary">Assista o Vídeo!</button>
-			</div>
-		</div>
+	<script type="text/javascript" language = "javascript" src="./script/dicasSeguranca.js"></script>
+	<link type="text/css" rel="stylesheet" href="./css/dicasSeguranca.css"/>
+	
+	<div class="topo">
+    	<div class="page-header text-center">
+        	<h1 id="timeline">Dicas Sobre Segurança!</h1>
+    	</div>
+	</div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li  class="timeline-inverted">
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+             
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li  class="timeline-inverted">
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+        
+        <li  class="timeline-inverted">
+          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
+              
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              
+            </div>
+            
+            <div class="timeline-footer primary">
+                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
+                <a><i class="glyphicon glyphicon-share"></i></a>
+                <a class="pull-right">Continuar Lendo</a>
+            </div>
+          </div>
+        </li>
+    </ul>
 
 
 
