@@ -20,13 +20,7 @@
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav">
-		            <li class="dropdown">
-		              <a href="./dicasSeguranca.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Segurança<span class="caret"></span></a>
-		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="./dicasSeguranca.php">Dicas</a></li>
-		                <li><a href="#">Vídeos</a></li>
-		              </ul>
-		            </li>
+                <li><a href="./dicasSeguranca.php">Dicas Sobre Segurança</a></li>
 	          	</ul>
 	            <ul class="nav navbar-nav navbar-right">
 	            	<li><a class="link" data-toggle="modal" data-target="#myModal">Dúvidas e Segustões</a></li>
