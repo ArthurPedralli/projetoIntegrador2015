@@ -7,6 +7,7 @@ include("menu.php");
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" language = "javascript" src="./script/index.js"></script>
 
+
 	<div class="row">
 		<div class="container-fluid">
 			<div class="tabela">
