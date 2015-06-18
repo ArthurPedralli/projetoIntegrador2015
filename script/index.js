@@ -8,15 +8,6 @@
       alert("O campo 'Destino' deve estar preenchido!");
       document.getElementById("txtDestino").focus();
     }
-    else if(document.getElementById("txtConsumo").value == "") {
-      alert("O campo 'Consumo' deve estar preenchido!");
-      document.getElementById("txtConsumo").focus();
-    }
-    else if(document.getElementById("txtPrecoCombustivel").value == "") {
-      alert("O campo 'Preço do combustível' deve estar preenchido!");
-      document.getElementById("txtPrecoCombustivel").focus();
-    }
-
     else {  
 
       $('#litResultado').html('Aguarde...');
