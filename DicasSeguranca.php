@@ -11,202 +11,100 @@ include("menu.php");
         	<h1 id="timeline">Dicas Sobre Segurança!</h1>
     	</div>
 	</div>
-<<<<<<< HEAD
-  <div class="container">
-    <div class="row">
-        <div class="col-sm-4 col-md-4">
-            <div class="post">
-                <div class="post-img-content">
-                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive" />
-                    <span class="post-title"><b>Make a Image Blur Effects With</b><br />
-                        <b>CSS3 Blur</b></span>
-                </div>
-                <div class="content">
-                    <div class="author">
-                        By <b>Bhaumik</b> |
-                        <time datetime="2014-01-20">January 20th, 2014</time>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <div class="post">
+                    <div class="post-img-content">
+                        <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2014/09/Limite-de-velocidade1.png" class="img-responsive" />
                     </div>
-                    <div>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                    <div>
-                        <a href="http://www.jquery2dotnet.com/2014/01/jquery-highlight-table-row-and-column.html" class="btn btn-warning btn-sm">Read more</a>
+                    <div class="content">
+                        <p><h4>Respeite o Limite de Velocidade!</h4></p>
+                        <div>
+                            A velocidade máxima de circulação de veículos nas estradas brasileiras é 
+                            determinada a partir de estudos do orgão ou entidade de trânsito com circunscrição sobre o local. 
+                            A análise leva em conta as características técnicas da via e as condiçõesdo tráfego, 
+                            como o relevo, o volume de uso, se a pista é simples ou dupla, entre outros fatores.
+                        </div>
+                        <div>
+                            <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal1">Continuar Lendo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="post">
-                <div class="post-img-content">
-                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive" />
-                    <span class="post-title"><b>Make a Image Blur Effects With</b><br />
-                        <b>CSS3 Blur</b></span>
-                </div>
-                <div class="content">
-                    <div class="author">
-                        By <b>Bhaumik</b> |
-                        <time datetime="2014-01-20">January 20th, 2014</time>
+            <div class="col-sm-4 col-md-4">
+                <div class="post">
+                    <div class="post-img-content">
+                        <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2014/09/Limite-de-velocidade1.png" class="img-responsive" />
                     </div>
-                    <div>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                    <div>
-                        <a href="http://www.jquery2dotnet.com/2014/01/jquery-highlight-table-row-and-column.html" class="btn btn-warning btn-sm">Read more</a>
+                    <div class="content">
+                        <p><h4>Respeite o Limite de Velocidade!</h4></p>
+                        <div>
+                            A velocidade máxima de circulação de veículos nas estradas brasileiras é 
+                            determinada a partir de estudos do orgão ou entidade de trânsito com circunscrição sobre o local. 
+                            A análise leva em conta as características técnicas da via e as condiçõesdo tráfego, 
+                            como o relevo, o volume de uso, se a pista é simples ou dupla, entre outros fatores.
+                        </div>
+                        <div>
+                            <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal1">Continuar Lendo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="post">
-                <div class="post-img-content">
-                    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive" />
-                    <span class="post-title"><b>Make a Image Blur Effects With</b><br />
-                        <b>CSS3 Blur</b></span>
-                </div>
-                <div class="content">
-                    <div class="author">
-                        By <b>Bhaumik</b> |
-                        <time datetime="2014-01-20">January 20th, 2014</time>
+            <div class="col-sm-4 col-md-4">
+                <div class="post">
+                    <div class="post-img-content">
+                        <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2014/09/Limite-de-velocidade1.png" class="img-responsive" />
                     </div>
-                    <div>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                    <div>
-                        <a href="http://www.jquery2dotnet.com/2014/01/jquery-highlight-table-row-and-column.html" class="btn btn-warning btn-sm">Read more</a>
+                    <div class="content">
+                        <p><h4>Respeite o Limite de Velocidade!</h4></p>
+                        <div>
+                            A velocidade máxima de circulação de veículos nas estradas brasileiras é 
+                            determinada a partir de estudos do orgão ou entidade de trânsito com circunscrição sobre o local. 
+                            A análise leva em conta as características técnicas da via e as condiçõesdo tráfego, 
+                            como o relevo, o volume de uso, se a pista é simples ou dupla, entre outros fatores.
+                        </div>
+                        <div>
+                            <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal1">Continuar Lendo</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
-=======
-    <ul class="timeline">
-        <li>
-          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-              
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-              
-            </div>
-            
-            <div class="timeline-footer">
-                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                <a><i class="glyphicon glyphicon-share"></i></a>
-                <a class="pull-right">Continuar Lendo</a>
-            </div>
-          </div>
-        </li>
-        
-        <li  class="timeline-inverted">
-          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-              
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-             
-            </div>
-            
-            <div class="timeline-footer">
-                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                <a><i class="glyphicon glyphicon-share"></i></a>
-                <a class="pull-right">Continuar Lendo</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-              
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-              
-            </div>
-            
-            <div class="timeline-footer">
-                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                <a><i class="glyphicon glyphicon-share"></i></a>
-                <a class="pull-right">Continuar Lendo</a>
-            </div>
-          </div>
-        </li>
-        
-        <li  class="timeline-inverted">
-          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-              
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-              
-            </div>
-            
-            <div class="timeline-footer">
-                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                <a><i class="glyphicon glyphicon-share"></i></a>
-                <a class="pull-right">Continuar Lendo</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-              
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-              
-            </div>
-            
-            <div class="timeline-footer">
-                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                <a><i class="glyphicon glyphicon-share"></i></a>
-                <a class="pull-right">Continuar Lendo</a>
-            </div>
-          </div>
-        </li>
-        
-        <li  class="timeline-inverted">
-          <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-              
-            </div>
-            <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-              
-            </div>
-            
-            <div class="timeline-footer primary">
-                <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                <a><i class="glyphicon glyphicon-share"></i></a>
-                <a class="pull-right">Continuar Lendo</a>
-            </div>
-          </div>
-        </li>
-    </ul>
->>>>>>> parent of 8535c06... Colocando e um site
 
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Respeite o Limite de Velocidade!</h4>
+                </div>
+
+                <div class="modal-body">
+                    <p>A velocidade máxima de circulação de veículos nas estradas brasileiras é determinada a partir de 
+                    estudos do orgão ou entidade de trânsito com circunscrição sobre o local. A análise leva em conta as 
+                    características técnicas da via e as condiçõesdo tráfego, como o relevo, o volume de uso, se a pista é simples ou dupla, 
+                    entre outros fatores. Ainda que haja esse limite determinado, dirigir acima da velocidade permitida é uma das maiores 
+                    causas de acidentes no Brasil. No Estado do Paraná, somente no primeiro semestre deste ano, mais de 450 mil multas foram 
+                    emitidas para motoristas que dirigiam acima da velocidade permitida. Em Goiânia (GO), do total de 499.320 infrações de 
+                    trânsito cometidas no mesmo período, 67% (339.474) eram referentes ao abuso de velocidade. Acidentes Quanto maior a 
+                    velocidade do veículo, maior será o tempo de reação do condutor e as chances de que acontecerá um acidente. 
+                    Por exemplo, em uma situação em que um motociclista estivesse trafegando a 100 km/h, o tempo de reação poderia 
+                    chegar até 14 minutos até o acionamento dos freios. Dados da Organização Mundial de Saúde (OMS) revelam que a 
+                    probabilidade de uma pessoa sobreviver a um atropelamento torna-se ligeiramente mais baixa a partir de um impacto a 50 km/h. 
+                    De acordo com o estudo, um aumento de 5% na velocidade média leva a um aumento de cerca de 10% das colisões com lesıes 
+                    e de 20% nas colisões fatais. Respeitar o limite de velocidade é respeitar a vida. Imprevistos acontecem e 
+                    ter um tempo para reagir à uma situação adversa pode fazer toda a diferença.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <?php
