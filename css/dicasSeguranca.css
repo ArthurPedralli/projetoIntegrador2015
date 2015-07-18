@@ -1,10 +1,13 @@
 body
 {
-    padding-top: 20px;
+    padding-top: 50px;
     background-color: #F7F7F7;
 }
+
+
 .post
 {
+    margin-bottom: 26px;
     background-color: #FFF;
     overflow: hidden;
     box-shadow: 0 0 1px #CCC;
