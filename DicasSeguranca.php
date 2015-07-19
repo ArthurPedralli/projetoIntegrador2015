@@ -22,7 +22,7 @@ include("menu.php");
                         <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2014/09/Limite-de-velocidade1.png" class="img-responsive" />
                     </div>
                     <div class="content">
-                        <p><h4>Respeite o Limite de Velocidade!</h4></p>
+                        <p><h4>Respeite o limite de velocidade!</h4></p>
                         <div>
                             A velocidade máxima de circulação de veículos nas estradas brasileiras é 
                             determinada a partir de estudos do orgão ou entidade de trânsito com circunscrição sobre o local. 
@@ -41,7 +41,7 @@ include("menu.php");
                         <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2014/10/Estrada-noite.jpg" class="img-responsive" />
                     </div>
                     <div class="content">
-                        <p><h4>Redobre a Atenção ao Dirigir à Noite!</h4></p>
+                        <p><h4>Redobre a atenção ao dirigir à noite!</h4></p>
                         <div>
                             Dirigir no período da noite requer atenção redobrada dos motoristas. 
                             Os perigos estão relacionados à iluminação, cansaço, condições das estradas e imprudência. 
@@ -59,7 +59,7 @@ include("menu.php");
                         <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2014/10/crianca.jpg" class="img-responsive" />
                     </div>
                     <div class="content">
-                        <p><h4>Importância da Segurança Infantil!</h4></p>
+                        <p><h4>Importância da segurança infantil!</h4></p>
                         <div>
                             Com a proximidade do Dia das Crianças, um alerta: a cada da, seis crianças morrem e outras 51 
                             sofrem sequelas graves por acidentes de trânsito no país. Os dados são do levantamento realizado pela 
@@ -84,7 +84,7 @@ include("menu.php");
                         <img src="http://www.dirigindoseguro.com.br/images/chuva.jpg" class="img-responsive" />
                     </div>
                     <div class="content">
-                        <p><h4>Cuidado em Condições Adversas!</h4></p>
+                        <p><h4>Cuidado em condições adversas!</h4></p>
                         <div>
                             Conduzir um veículo sob forte chuva ou neblina pode se tornar uma ação perigosa se o motorista não tiver 
                             atenção redobrada. O ideal é que, antes de pegar a estrada, os condutores chequem a previsão do tempo e as 
@@ -102,7 +102,7 @@ include("menu.php");
                         <img src="http://blogs.diariodepernambuco.com.br/mobilidadeurbana/wp-content/uploads/2012/04/cinto-de-seguran%C3%A7a.jpg" class="img-responsive" />
                     </div>
                     <div class="content">
-                        <p><h4>Cinto de Segurança no Banco de Trás!</h4></p>
+                        <p><h4>Cinto de segurança no banco de trás!</h4></p>
                         <div>
                             O uso do cinto de segurança tornou-se um hábito de muitos motoristas e dos passageiros que 
                             viajam no banco da frente dos carros. Porém, o uso do acessório no banco de trás ainda é muito negligenciado. 
@@ -120,7 +120,7 @@ include("menu.php");
                         <img src="http://www.adpvat.org.br/admin/noticias/imagens/Neblina_Rodovia_1.jpg" class="img-responsive" />
                     </div>
                     <div class="content">
-                        <p><h4>Cuidados com Neblina!</h4></p>
+                        <p><h4>Cuidados com neblina!</h4></p>
                         <div>
                            Durante o inverno é muito comum a incidência de neblina nas estradas. Os meses entre maio e julho 
                            apresentam os índices mais altos do fenômeno, sobretudo nas regiões sul e sudeste do Brasil. 
@@ -128,6 +128,67 @@ include("menu.php");
                         </div>
                         <div>
                             <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal6">Continuar Lendo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Line 3  -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <div class="post">
+                    <div class="post-img-content">
+                        <img src="http://www.pastre.com.br/pastrinho/wp-content/uploads/2013/05/sono-ao-volante.jpg" class="img-responsive" />
+                    </div>
+                    <div class="content">
+                        <p><h4>Evite o sono e o cansaço ao dirigir!</h4></p>
+                        <div>
+                            Dormir é uma necessidade básica do organismo para recompor o desgaste gerado durante o dia. 
+                            Infelizmente, o sono ao volante é uma das principais causas de acidentes nas estradas brasileiras. 
+                            Por isso, é importante que todos os motoristas gerenciem o seu cansaço e horas de sono de forma responsável.
+                        </div>
+                        <div>
+                            <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal7">Continuar Lendo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="post">
+                    <div class="post-img-content">
+                        <img src="http://www.viverseguronotransito.com.br/wp-content/uploads/2015/03/ar-condicionado.jpg" class="img-responsive" />
+                    </div>
+                    <div class="content">
+                        <p><h4>Cuidados com o Ar-Condicionado!</h4></p>
+                        <div>
+                            No Brasil, quando as temperaturas ficam altas, o ar condicionado do carro é sempre um grande aliado. 
+                            Mas você sabia que o equipamento precisa de manutenção o ano todo? Confira as dicas abaixo e fique em dia com o ar 
+                            condicionado de seu veículo...</br></br>
+                        </div>
+                        <div>
+                            <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal8">Continuar Lendo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-sm-4 col-md-4">
+                <div class="post">
+                    <div class="post-img-content">
+                        <img src="http://www.jornalatribuna.com.br/wp-content/uploads/2015/05/noticia_8190.jpeg" class="img-responsive" />
+                    </div>
+                    <div class="content">
+                        <p><h4>O uso indevido do celular!</h4></p>
+                        <div>
+                           De acordo com dados divulgados pelo portal do PARADA – Pacto Nacional pela Redução de Acidentes, desde outubro de 2010, 
+                           o Brasil tem mais celulares do que pessoas. Hoje em dia, para cada 100 habitantes no país, há aproximadamente 135 celulares, 
+                           e esses números trazem consequências para várias áreas...
+                        </div>
+                        <div>
+                            <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modal9">Continuar Lendo</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +204,7 @@ include("menu.php");
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Respeite o Limite de Velocidade!</h4>
+                        <h4 class="modal-title">Respeite o limite de velocidade!</h4>
                     </div>
 
                     <div class="modal-body">
@@ -174,7 +235,7 @@ include("menu.php");
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Redobre a Atenção ao Dirigir à Noite!</h4>
+                        <h4 class="modal-title">Redobre a atenção ao dirigir à noite!</h4>
                     </div>
 
                     <div class="modal-body">
@@ -209,7 +270,7 @@ include("menu.php");
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Importância da Segurança Infantil!</h4>
+                        <h4 class="modal-title">Importância da segurança infantil!</h4>
                     </div>
 
                     <div class="modal-body">
@@ -258,7 +319,7 @@ include("menu.php");
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Cuidado em Condições Adversas!</h4>
+                        <h4 class="modal-title">Cuidado em condições adversas!</h4>
                     </div>
 
                     <div class="modal-body">
@@ -288,7 +349,7 @@ include("menu.php");
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Cinto de Segurança no Banco de Trás!</h4>
+                        <h4 class="modal-title">Cinto de segurança no banco de trás!</h4>
                     </div>
 
                     <div class="modal-body">
@@ -315,7 +376,7 @@ include("menu.php");
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Cuidados com Neblina!</h4>
+                        <h4 class="modal-title">Cuidados com neblina!</h4>
                     </div>
 
                     <div class="modal-body">
@@ -352,6 +413,109 @@ include("menu.php");
             </div>
         </div>
     </div>
+
+    <!-- Modal Line 3 -->
+
+    <div class="modal_line_3">  
+        <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Evite o sono e o cansaço ao dirigir!</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Dormir é uma necessidade básica do organismo para recompor o desgaste gerado durante o dia. 
+                        Infelizmente, o sono ao volante é uma das principais causas de acidentes nas estradas brasileiras. 
+                        Por isso, é importante que todos os motoristas gerenciem o seu cansaço e horas de sono de forma responsável.</br></br>
+                        Antes de viajar – ou de sair para trabalhar, no caso dos motoristas profissionais – planeje o trajeto e marque pontos 
+                        de parada. Não exagere ao dirigir por longos períodos, principalmente à noite, pois o estado de sonolência diminui os 
+                        reflexos do condutor facilitando a ocorrência de acidentes.</br></br>
+                        Veja mais algumas dicas para evitar o cansaço e o sono ao dirigir: 
+                        </br></br>- Não sente ao volante com uma postura relaxada demais, pois facilita a chegada do sono; 
+                        </br></br>- Procure descansar bastante nas horas anteriores à viagem, para já começar o trajeto bem disposto; 
+                        </br></br>- Em estradas com muitas retas e com percurso monótono, procure movimentar os olhos, visualizando a todo o momento os retrovisores, os mostradores do painel e também outros instrumentos do veículo; 
+                        </br></br>- Evite escutar músicas muito relaxantes, dê preferência àquelas mais rápidas. 
+                        </br></br>- Deixe o interior do veículo ventilado e refrescante; - Não consuma alimentos pesados demais antes ou durante a viagem; 
+                        </br></br>- Jamais utilize medicamentos para forçar o seu organismo a ficar acordado. 
+                        </br></br>Respeite os seus limites para garantir a sua segurança. Seja um motorista responsável. 
+                        Se estiver cansado, pare e descanse. É um gesto simples que evitará que você coloque em risco a sua vida, 
+                        dos passageiros, pedestres e dos demais motoristas. Lembre-se, uma piscada um pouco mais demorada pode custar uma vida.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Cuidados com o Ar-Condicionado!</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>No Brasil, quando as temperaturas ficam altas, o ar condicionado do carro é sempre um grande aliado. 
+                        Mas você sabia que o equipamento precisa de manutenção o ano todo?</br></br>
+                        Confira as dicas abaixo e fique em dia com o ar condicionado de seu veículo:
+                        </br></br>- Ligue o equipamento pelo menos uma vez por semana, mesmo nas estações mais frias. Isso evita que o óleo fique parado no compressor e que as mangueiras ressequem; 
+                        </br></br>- Mantenha o condensador, colocado à frente do radiador do seu carro, o mais limpo possível, livre de insetos e outros detritos. Dessa maneira, você garante o livre fluxo de ar; 
+                        </br></br>- Faça uma revisão geral no ar condicionado pelo menos uma vez ao ano, para garantir que todas as peças funcionam perfeitamente; 
+                        </br></br>- Caso o sistema perca gás, corrija o vazamento e proceda a recarga do gás e do óleo do sistema que, nessas condições, é arrastado pelo gás; 
+                        </br></br>Um veículo em perfeitas condições de uso proporciona uma experiência de direção muito mais agradável ao usuário 
+                        e previne que pequenos problemas sejam uma distração na hora de dirigir. Manter a manutenção completa do seu carro em dia também é 
+                        uma questão de segurança!</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">O uso indevido do celular!</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>De acordo com dados divulgados pelo portal do PARADA – Pacto Nacional pela Redução de Acidentes, 
+                        desde outubro de 2010, o Brasil tem mais celulares do que pessoas. Hoje em dia, para cada 100 habitantes no país, 
+                        há aproximadamente 135 celulares, e esses números trazem consequências para várias áreas, inclusive para o trânsito. 
+                        </br></br>Para chamar a atenção para os sérios riscos que a distração causada pelo celular pode causar, o PARADA 
+                        lançou uma nova campanha, que tem como slogan “Trânsito sem celular. Atenda a esse chamado. Seja você a mudança no trânsito”. 
+                        </br></br>A ação demonstra algumas situações de risco para retratar o quão absurdo é o hábito de usar o celular 
+                        no trânsito: um açougueiro cortando carne enquanto fala ao celular; um marceneiro utilizando uma motoserra também 
+                        falando ao celular; e uma médica operando um paciente atendendo ao telefone. Todas essas situações remetem ao risco 
+                        de se realizar algo potencialmente perigoso prestando atenção em outra coisa. Na sequência vemos que a distração 
+                        causada pelo celular no trânsito pode causar acidentes perigosíssimos, que podem ter como resultado o óbito de quem 
+                        usa o celular ou de outras pessoas no trânsito. 
+                        </br></br>Em recente pesquisa realizada pela Sociedade Brasileira de Ortopedia e Traumatologia (Sbot) 
+                        nas cidades do Rio de Janeiro e São Paulo, uma triste realidade fica evidente: 84% dos motoristas admitem 
+                        usar o aparelho celular enquanto dirigem. Além disso, 48% dos entrevistados dizem que já passaram por alguma 
+                        situação de risco ao volante, causada por uma distração, e em 23% dos casos o celular foi o responsável pelo incidente. 
+                        </br></br>É preciso lembrar que aqui no Brasil, conversar no celular ao volante é considerado infração grave, 
+                        de acordo com o Código de Trânsito Brasileiro. Os infratores recebem multa de R$ 127,69 e penalidade de cinco pontos 
+                        na carteira de habilitação.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <?php
 include("rodape.php");
