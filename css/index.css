@@ -3,6 +3,13 @@
 	margin-top: 70px;	
 }
 
+#txtOrigem:focus {
+    border-color:red;
+}
+
+#txtDestino:focus {
+    border-color:red;
+}
 
 /*.mapa{
 	padding: 1% 0 0; 

@@ -1,9 +1,6 @@
-<html>
-<head>
-	<title></title>
+
 	<link type="text/css" rel="stylesheet" href="./css/menu.css"/>
-</head>
-<body>
+
 	<nav class="navbar navbar-default navbar-fixed-top">
 	    <div class="container">
 	        <div class="navbar-header">
@@ -72,7 +69,5 @@
       </div>
     </div>
 
-</body>
-</html>
  <script type="text/javascript" language = "javascript" src="./script/menu.js"></script>
 
