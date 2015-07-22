@@ -42,7 +42,7 @@ include("menu.php");
 					<div class="col-md-12 form-group">	
 						<div class= "col-md-6">
 							<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" />
-						</div>
+<!-- 						<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" onclick="CalculaDistancia()" autocomplete="off">Calcular</button>-->						</div>
 					</div>
 				</div>
 

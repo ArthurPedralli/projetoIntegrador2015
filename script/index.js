@@ -1,5 +1,5 @@
-
 function CalculaDistancia() {
+
 
   if ($('#txtOrigem').val() == ''){
     $("#txtOrigem").focus();
@@ -12,6 +12,8 @@ function CalculaDistancia() {
   };
 
   $('#litResultado').html('Aguarde...');
+
+
   //Instanciar o DistanceMatrixService
   var service = new google.maps.DistanceMatrixService();
   //executar o DistanceMatrixService
@@ -40,6 +42,7 @@ function CalculaDistancia() {
             var consumo = $("#txtConsumo").val();
                 consumo = consumo.replace(/,/g, ".");
                 //console.log(consumo);
+
             //Preco Combustivel
             var preco = $("#txtPrecoCombustivel").val();
                 preco = preco.replace(/,/g, ".");
@@ -47,19 +50,25 @@ function CalculaDistancia() {
 
             var i;
             var numsStr = 0;
-            for (i=0; i<response.rows[0].elements[0].distance.text.length; i++){  
-                var c = response.rows[0].elements[0].distance.text.charAt(i);
+            try{
 
-                if (c === ','  || c === ' ') {
-                    break;
-                } else if(c ==='.'){
-                    // não faz nada mesmo, esta certo!
-                }else{
-                    numsStr = numsStr + c;
-                };
+                for (i=0; i<response.rows[0].elements[0].distance.text.length; i++){  
+                    var c = response.rows[0].elements[0].distance.text.charAt(i);
 
-                //console.log("C: ", c);
-                //console.log("N-D: ", numsStr);
+                    if (c === ','  || c === ' ') {
+                        break;
+                    } else if(c ==='.'){
+                        // não faz nada mesmo, esta certo!
+                    }else{
+                        numsStr = numsStr + c;
+                    };
+
+                    //console.log("C: ", c);
+                    //console.log("N-D: ", numsStr);
+                }
+            } catch (error){
+                $('#litResultado').html('Local não encontrado!');
+                return;
             }
 
             numsStr = numsStr.substr(1);
@@ -68,6 +77,8 @@ function CalculaDistancia() {
             var totalParcial = numsStr  / consumo;
 
             var totalCombustivel = totalParcial * preco;
+
+            totalCombustivel = totalCombustivel ? "<br /><strong>Gasto com Combustível</strong>: R$ "+totalCombustivel.toFixed(2) : "";
 
             //melhorias a fazer
             //totalCombustivel = totalCombustivel.replace(/./g, ",");
@@ -80,8 +91,7 @@ function CalculaDistancia() {
             $('#litResultado').html("<strong>Origem</strong>: " + response.originAddresses +
                                     "<br /><strong>Destino:</strong> " + response.destinationAddresses +
                                     "<br /><strong>Distância</strong>: " + response.rows[0].elements[0].distance.text +
-                                    " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text +
-                                    " <br /><strong>Gasto com Combustível</strong>: R$ " + totalCombustivel.toFixed(2) 
+                                    " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text + totalCombustivel
                                   );
             //Atualizar o mapa
             $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
