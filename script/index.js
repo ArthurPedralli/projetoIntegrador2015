@@ -11,6 +11,16 @@ function CalculaDistancia() {
     return;
   };
 
+  if($('#txtConsumo').val() < 0){
+    $( "#txtConsumo" ).focus(); 
+    return;
+  };
+
+  if ($('#txtPrecoCombustivel').val() < 0){
+    $("#txtPrecoCombustivel").focus();
+    return;
+  };
+
   $('#litResultado').html('Aguarde...');
 
 
