@@ -1,3 +1,15 @@
+
+function initialize() {
+   var mapOptions = {
+      center: new google.maps.LatLng(-12.456697, -52.082667),
+      zoom: 4,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+   };
+   var map = new google.maps.Map(document.getElementById("mapa"),
+ mapOptions);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
 function CalculaDistancia() {
 
 

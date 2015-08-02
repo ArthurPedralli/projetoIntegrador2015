@@ -4,7 +4,8 @@ include("menu.php");
 ?>
 
 <link type="text/css" rel="stylesheet" href="./css/index.css"/>
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
 <script type="text/javascript" language = "javascript" src="./script/index.js"></script>
 
 
@@ -57,9 +58,9 @@ include("menu.php");
 
 				<div class="row">
 					<div class="col-md-12 form-group">
-						<div class="mapa">
-					      	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?output=embed"></iframe>
-					       	<!----<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
+						<div id="mapa">
+					      <!--	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?output=embed"></iframe>-->
+					       	<!--<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
 					    </div>
 					    
 					</div>
