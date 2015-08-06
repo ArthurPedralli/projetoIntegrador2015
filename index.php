@@ -56,7 +56,7 @@ include("menu.php");
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row" id="mapa1">
 					<div class="col-md-12 form-group">
 						<div id="mapa">
 					      <!--	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?output=embed"></iframe>-->
@@ -65,6 +65,13 @@ include("menu.php");
 					    
 					</div>
 				</div>
+
+				<div class="row" id="mapa2" style=" display: none;">
+					<div class="col-md-12 form-group">
+					      	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?output=embed"></iframe>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

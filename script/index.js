@@ -116,6 +116,8 @@ function CalculaDistancia() {
                                     " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text + totalCombustivel
                                   );
             //Atualizar o mapa
+            $( "#mapa1" ).hide();
+            $( "#mapa2" ).show();
             $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
         }
     }
