@@ -1,6 +1,6 @@
 <?php
 include("cabecalho.php");
-include("menu.php");  
+include("menu.php");
 ?>
 
 <link type="text/css" rel="stylesheet" href="./css/index.css"/>
@@ -14,7 +14,7 @@ include("menu.php");
 			<div class="tabela">
 
 				<div class="row">
-					<div class="col-md-12 form-group">	
+					<div class="col-md-12 form-group">
 						<div class="col-md-6">
 						    <label for="txtOrigem">Endereço de origem: </label>
 				        	<input placeholder = "São Paulo - SP / Rua Oscar Freire, São Paulo - SP" type="text" id="txtOrigem" class="form-control" required/>
@@ -22,10 +22,10 @@ include("menu.php");
 						<div class="col-md-6">
 				        	<label for="txtDestino">Endereço de destino: </label>
 		        			<input placeholder = "Rio de Janeiro - RJ / Rua da Conceição, Rio de Janeiro - RJ" type="text"  class="form-control" id="txtDestino" required/>
-						</div>	
+						</div>
 					</div>
 				</div>
-				
+
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<div class="col-md-6">
@@ -38,16 +38,20 @@ include("menu.php");
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="row">
-					<div class="col-md-12 form-group">	
+					<div class="col-md-12 form-group">
 						<div class= "col-md-6">
 							<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" data-target="#mapa" />
-<!-- 						<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" onclick="CalculaDistancia()" autocomplete="off">Calcular</button>-->						</div>
+<!-- 						<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" onclick="CalculaDistancia()" autocomplete="off">Calcular</button>-->
+						</div>
+						<div class= "col-md-6">
+							<input type="button" id="gera_PDF" value="Imprimir" onclick="#" class="btn btn-default pull-right" data-target="#mapa" />
+						</div>
 					</div>
 				</div>
 
-	
+
 				<div class="row">
 					<div class="col-md-12">
 						<div class= "col-md-6">
@@ -62,7 +66,7 @@ include("menu.php");
 					      <!--	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?output=embed"></iframe>-->
 					       	<!--<div id="map" style="width:100%; height:100%" onload="initialize()"></div> -->
 					    </div>
-					    
+
 					</div>
 				</div>
 

@@ -1,5 +1,6 @@
 
 function initialize() {
+  $("#gera_PDF").attr("disabled","disabled");
    var mapOptions = {
       center: new google.maps.LatLng(-12.456697, -52.082667),
       zoom: 4,
@@ -19,12 +20,12 @@ function CalculaDistancia() {
   };
 
   if($('#txtDestino').val() == ''){
-    $( "#txtDestino" ).focus(); 
+    $( "#txtDestino" ).focus();
     return;
   };
 
   if($('#txtConsumo').val() < 0){
-    $( "#txtConsumo" ).focus(); 
+    $( "#txtConsumo" ).focus();
     return;
   };
 
@@ -49,7 +50,7 @@ function CalculaDistancia() {
     //Sistema de medida (METRIC | IMPERIAL)
     unitSystem: google.maps.UnitSystem.METRIC
     //Vai chamar o callback
-  }, callback);    
+  }, callback);
 
 
 
@@ -74,7 +75,7 @@ function CalculaDistancia() {
             var numsStr = 0;
             try{
 
-                for (i=0; i<response.rows[0].elements[0].distance.text.length; i++){  
+                for (i=0; i<response.rows[0].elements[0].distance.text.length; i++){
                     var c = response.rows[0].elements[0].distance.text.charAt(i);
 
                     if (c === ','  || c === ' ') {
@@ -89,6 +90,7 @@ function CalculaDistancia() {
                     //console.log("N-D: ", numsStr);
                 }
             } catch (error){
+                $("#gera_PDF").attr("disabled","disabled");
                 $('#litResultado').html('Local não encontrado!');
                 return;
             }
@@ -118,9 +120,10 @@ function CalculaDistancia() {
             //Atualizar o mapa
             $( "#mapa1" ).hide();
             $( "#mapa2" ).show();
+            $("#gera_PDF").removeAttr("disabled");
             $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
         }
     }
 }
 
- 
+
