@@ -46,7 +46,7 @@ include("menu.php");
 <!-- 						<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" onclick="CalculaDistancia()" autocomplete="off">Calcular</button>-->
 						</div>
 						<div class= "col-md-6">
-							<input type="button" id="gera_PDF" value="Imprimir" onclick="#" class="btn btn-default pull-right" data-target="#mapa" />
+							<input type="button" id="gera_PDF" value="Imprimir" class="btn btn-default pull-right" data-target="#mapa" />
 						</div>
 					</div>
 				</div>

@@ -1,3 +1,8 @@
+var consumo;
+var destino;
+var preco; 
+var origem;
+var totalCombustivel;
 
 function initialize() {
   $("#gera_PDF").attr("disabled","disabled");
@@ -11,8 +16,29 @@ function initialize() {
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 
-function CalculaDistancia() {
+$(document).ready(function(){
+    $('#gera_PDF').click(function(){
+      /*  //Consumo do Veículo 
+        var consumo = $("#txtConsumo").val();
+            consumo = consumo.replace(/,/g, ".");
+        //Preco Combustivel
+        var preco = $("#txtPrecoCombustivel").val();
+            preco = preco.replace(/,/g, ".");
+        //Origem e destino
+        var origem = $('#txtOrigem').val();
+        var destino = $('#txtDestino').val();
 
+        origem = 'Origem: '.concat(origem);
+        destino = 'Destino: '.concat(destino);*/
+
+        window.open('geraPDF.php?origem='+origem+'&destino='+destino+
+            '&consumo='+consumo+'&preco='+preco+'&totalCombustivel='+totalCombustivel+'');
+    
+    });
+});
+
+
+function CalculaDistancia() {
 
   if ($('#txtOrigem').val() == ''){
     $("#txtOrigem").focus();
@@ -35,6 +61,9 @@ function CalculaDistancia() {
   };
 
   $('#litResultado').html('Aguarde...');
+
+  origem = $('#txtOrigem').val();
+  destino = $('#txtDestino').val();
 
 
   //Instanciar o DistanceMatrixService
@@ -62,14 +91,14 @@ function CalculaDistancia() {
         $('#litResultado').html(status);
         }else {
             //Consumo
-            var consumo = $("#txtConsumo").val();
-                consumo = consumo.replace(/,/g, ".");
-                //console.log(consumo);
+            consumo = $("#txtConsumo").val();
+            consumo = consumo.replace(/,/g, ".");
+            //console.log(consumo);
 
             //Preco Combustivel
-            var preco = $("#txtPrecoCombustivel").val();
-                preco = preco.replace(/,/g, ".");
-                //console.log(preco);
+            preco = $("#txtPrecoCombustivel").val();
+            preco = preco.replace(/,/g, ".");
+            //console.log(preco);
 
             var i;
             var numsStr = 0;
@@ -100,7 +129,7 @@ function CalculaDistancia() {
 
             var totalParcial = numsStr  / consumo;
 
-            var totalCombustivel = totalParcial * preco;
+            totalCombustivel = totalParcial * preco;
 
             totalCombustivel = totalCombustivel ? "<br /><strong>Gasto com Combustível</strong>: R$ "+totalCombustivel.toFixed(2) : "";
 
