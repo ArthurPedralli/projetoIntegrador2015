@@ -12,28 +12,14 @@ function initialize() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
    };
    var map = new google.maps.Map(document.getElementById("mapa"),
- mapOptions);
+ mapOptions); 
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-
+  
 $(document).ready(function(){
     $('#gera_PDF').click(function(){
-      /*  //Consumo do Veículo 
-        var consumo = $("#txtConsumo").val();
-            consumo = consumo.replace(/,/g, ".");
-        //Preco Combustivel
-        var preco = $("#txtPrecoCombustivel").val();
-            preco = preco.replace(/,/g, ".");
-        //Origem e destino
-        var origem = $('#txtOrigem').val();
-        var destino = $('#txtDestino').val();
-
-        origem = 'Origem: '.concat(origem);
-        destino = 'Destino: '.concat(destino);*/
-
         window.open('geraPDF.php?origem='+origem+'&destino='+destino+
             '&consumo='+consumo+'&preco='+preco+'&totalCombustivel='+totalCombustivel+'');
-    
     });
 });
 
@@ -61,10 +47,6 @@ function CalculaDistancia() {
   };
 
   $('#litResultado').html('Aguarde...');
-
-  origem = $('#txtOrigem').val();
-  destino = $('#txtDestino').val();
-
 
   //Instanciar o DistanceMatrixService
   var service = new google.maps.DistanceMatrixService();
@@ -141,11 +123,15 @@ function CalculaDistancia() {
             //Endereço de destino = response.destinationAddresses
             //Distância = response.rows[0].elements[0].distance.text
             //Duração = response.rows[0].elements[0].duration.text
+            origem = response.originAddresses;
+            destino = response.destinationAddresses;
+
             $('#litResultado').html("<strong>Origem</strong>: " + response.originAddresses +
                                     "<br /><strong>Destino:</strong> " + response.destinationAddresses +
                                     "<br /><strong>Distância</strong>: " + response.rows[0].elements[0].distance.text +
                                     " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text + totalCombustivel
                                   );
+
             //Atualizar o mapa
             $( "#mapa1" ).hide();
             $( "#mapa2" ).show();
