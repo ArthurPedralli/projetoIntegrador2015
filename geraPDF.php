@@ -12,6 +12,13 @@
 	$preco = "Preço: ".$_REQUEST['preco'];
 	$consumo = "Consumo: ".$_REQUEST['consumo']; 
 	$totalCombustivel = $_REQUEST['totalCombustivel'];
+
+	echo "<pre>".print_r($origem, true)."</pre>";
+	echo "<pre>".print_r($destino, true)."</pre>";
+	echo "<pre>".print_r($preco, true)."</pre>";
+	echo "<pre>".print_r($consumo, true)."</pre>";
+	echo "<pre>".print_r($totalCombustivel, true)."</pre>";
+		
 		
 
 	/*$mpdf = new mPDF();
