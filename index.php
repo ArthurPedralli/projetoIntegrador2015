@@ -42,11 +42,8 @@ include("menu.php");
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<div class= "col-md-6">
-							<input type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" data-target="#mapa" />
+							<a href="#botaoCalcular"><input id="botaoCalcular" type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" data-target="#mapa"/></a>
 <!-- 						<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" onclick="CalculaDistancia()" autocomplete="off">Calcular</button>-->
-						</div>
-						<div class= "col-md-6">
-							<input type="button" id="gera_PDF" value="Imprimir" class="btn btn-default pull-right" data-target="#mapa" />
 						</div>
 					</div>
 				</div>
@@ -57,6 +54,12 @@ include("menu.php");
 						<div class= "col-md-6">
 							<div><span id="litResultado">&nbsp;</span></div>
 						</div>
+						<form method="POST">
+							<div class= "col-md-6">
+								<input type="button" value="Imprimir" id="gera_PDF" class="btn btn-default pull-right" 
+								data-target="#mapa" /> 
+							</div>
+						</form>
 					</div>
 				</div>
 
@@ -72,13 +75,37 @@ include("menu.php");
 
 				<div class="row" id="mapa2" style=" display: none;">
 					<div class="col-md-12 form-group">
-					      	<iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?output=embed"></iframe>
+					    <iframe width="100%" scrolling="no" height="450" frameborder="0" id="map" marginheight="0" marginwidth="0"  src="https://maps.google.com/maps?output=embed"></iframe>
 					</div>
 				</div>
 
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		      $('#gera_PDF').click(function(){
+
+		          	<?php 
+		          		$im = imagegrabscreen();
+						imagepng($im, "imagem.png");
+						/*imagedestroy($im);*/
+						$to_crop_array = array('x' =>100 , 'y' => 123, 'width' => 1000, 'height'=> 560);
+						$thumb_im = imagecrop($im, $to_crop_array);
+						imagejpeg($thumb_im, 'imagem.png', 100);
+
+
+						/*include_once("lib/mpdf60/mpdf.php");
+						$mpdf = new mPDF();
+						$mpdf->WriteHTML('Olá');
+						$mpdf->Output();
+						$mpdf->Open();
+						exit;*/
+		            ?>
+		      });
+		});
+	</script>
 
 
 <?php

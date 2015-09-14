@@ -1,144 +1,145 @@
-var consumo;
-var destino;
-var preco; 
-var origem;
-var totalCombustivel;
 
-function initialize() {
-  $("#gera_PDF").attr("disabled","disabled");
-   var mapOptions = {
-      center: new google.maps.LatLng(-12.456697, -52.082667),
-      zoom: 4,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-   };
-   var map = new google.maps.Map(document.getElementById("mapa"),
- mapOptions); 
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-  
-$(document).ready(function(){
-    $('#gera_PDF').click(function(){
-        window.open('geraPDF.php?origem='+origem+'&destino='+destino+
-            '&consumo='+consumo+'&preco='+preco+'&totalCombustivel='+totalCombustivel+'');
-    });
-});
+  var consumo;
+  var destino;
+  var preco; 
+  var origem;
+  var totalCombustivel;
 
-
-function CalculaDistancia() {
-
-  if ($('#txtOrigem').val() == ''){
-    $("#txtOrigem").focus();
-    return;
-  };
-
-  if($('#txtDestino').val() == ''){
-    $( "#txtDestino" ).focus();
-    return;
-  };
-
-  if($('#txtConsumo').val() < 0){
-    $( "#txtConsumo" ).focus();
-    return;
-  };
-
-  if ($('#txtPrecoCombustivel').val() < 0){
-    $("#txtPrecoCombustivel").focus();
-    return;
-  };
-
-  $('#litResultado').html('Aguarde...');
-
-  //Instanciar o DistanceMatrixService
-  var service = new google.maps.DistanceMatrixService();
-  //executar o DistanceMatrixService
-  service.getDistanceMatrix({
-    //Origem
-    origins: [$("#txtOrigem").val()],
-    //Destino
-    destinations: [$("#txtDestino").val()],
-    //Modo (DRIVING | WALKING | BICYCLING)
-    travelMode: google.maps.TravelMode.DRIVING,
-    //Sistema de medida (METRIC | IMPERIAL)
-    unitSystem: google.maps.UnitSystem.METRIC
-    //Vai chamar o callback
-  }, callback);
+  function initialize() {
+    $("#gera_PDF").attr("disabled","disabled");
+     var mapOptions = {
+        center: new google.maps.LatLng(-12.456697, -52.082667),
+        zoom: 4,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+     var map = new google.maps.Map(document.getElementById("mapa"),
+   mapOptions); 
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+    
+  /*$(document).ready(function(){
+      $('#gera_PDF').click(function(){
+          window.open('geraPDF.php?origem='+origem+'&destino='+destino+
+              '&consumo='+consumo+'&preco='+preco+'&totalCombustivel='+totalCombustivel+'');
+      });
+  });*/
 
 
+  function CalculaDistancia() {
 
-    //Tratar o retorno do DistanceMatrixService
-    function callback(response, status) {
-        //Verificar o Status
-        if (status != google.maps.DistanceMatrixStatus.OK){
-        //Se o status não for "OK"
-        $('#litResultado').html(status);
-        }else {
-            //Consumo
-            consumo = $("#txtConsumo").val();
-            consumo = consumo.replace(/,/g, ".");
-            //console.log(consumo);
+    if ($('#txtOrigem').val() == ''){
+      $("#txtOrigem").focus();
+      return;
+    };
 
-            //Preco Combustivel
-            preco = $("#txtPrecoCombustivel").val();
-            preco = preco.replace(/,/g, ".");
-            //console.log(preco);
+    if($('#txtDestino').val() == ''){
+      $( "#txtDestino" ).focus();
+      return;
+    };
 
-            var i;
-            var numsStr = 0;
-            try{
+    if($('#txtConsumo').val() < 0){
+      $( "#txtConsumo" ).focus();
+      return;
+    };
 
-                for (i=0; i<response.rows[0].elements[0].distance.text.length; i++){
-                    var c = response.rows[0].elements[0].distance.text.charAt(i);
+    if ($('#txtPrecoCombustivel').val() < 0){
+      $("#txtPrecoCombustivel").focus();
+      return;
+    };
 
-                    if (c === ','  || c === ' ') {
-                        break;
-                    } else if(c ==='.'){
-                        // não faz nada mesmo, esta certo!
-                    }else{
-                        numsStr = numsStr + c;
-                    };
+    $('#litResultado').html('Aguarde...');
 
-                    //console.log("C: ", c);
-                    //console.log("N-D: ", numsStr);
-                }
-            } catch (error){
-                $("#gera_PDF").attr("disabled","disabled");
-                $('#litResultado').html('Local não encontrado!');
-                return;
-            }
+    //Instanciar o DistanceMatrixService
+    var service = new google.maps.DistanceMatrixService();
+    //executar o DistanceMatrixService
+    service.getDistanceMatrix({
+      //Origem
+      origins: [$("#txtOrigem").val()],
+      //Destino
+      destinations: [$("#txtDestino").val()],
+      //Modo (DRIVING | WALKING | BICYCLING)
+      travelMode: google.maps.TravelMode.DRIVING,
+      //Sistema de medida (METRIC | IMPERIAL)
+      unitSystem: google.maps.UnitSystem.METRIC
+      //Vai chamar o callback
+    }, callback);
 
-            numsStr = numsStr.substr(1);
-            //console.log("N-F: ",numsStr);
 
-            var totalParcial = numsStr  / consumo;
 
-            totalCombustivel = totalParcial * preco;
+      //Tratar o retorno do DistanceMatrixService
+      function callback(response, status) {
+          //Verificar o Status
+          if (status != google.maps.DistanceMatrixStatus.OK){
+          //Se o status não for "OK"
+          $('#litResultado').html(status);
+          }else {
+              //Consumo
+              consumo = $("#txtConsumo").val();
+              consumo = consumo.replace(/,/g, ".");
+              //console.log(consumo);
 
-            totalCombustivel = totalCombustivel ? "<br /><strong>Gasto com Combustível</strong>: R$ "+totalCombustivel.toFixed(2) : "";
+              //Preco Combustivel
+              preco = $("#txtPrecoCombustivel").val();
+              preco = preco.replace(/,/g, ".");
+              //console.log(preco);
 
-            //melhorias a fazer
-            //totalCombustivel = totalCombustivel.replace(/./g, ",");
+              var i;
+              var numsStr = 0;
+              try{
 
-            //Se o status for OK
-            //Endereço de origem = response.originAddresses
-            //Endereço de destino = response.destinationAddresses
-            //Distância = response.rows[0].elements[0].distance.text
-            //Duração = response.rows[0].elements[0].duration.text
-            origem = response.originAddresses;
-            destino = response.destinationAddresses;
+                  for (i=0; i<response.rows[0].elements[0].distance.text.length; i++){
+                      var c = response.rows[0].elements[0].distance.text.charAt(i);
 
-            $('#litResultado').html("<strong>Origem</strong>: " + response.originAddresses +
-                                    "<br /><strong>Destino:</strong> " + response.destinationAddresses +
-                                    "<br /><strong>Distância</strong>: " + response.rows[0].elements[0].distance.text +
-                                    " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text + totalCombustivel
-                                  );
+                      if (c === ','  || c === ' ') {
+                          break;
+                      } else if(c ==='.'){
+                          // não faz nada mesmo, esta certo!
+                      }else{
+                          numsStr = numsStr + c;
+                      };
 
-            //Atualizar o mapa
-            $( "#mapa1" ).hide();
-            $( "#mapa2" ).show();
-            $("#gera_PDF").removeAttr("disabled");
-            $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
-        }
-    }
-}
+                      //console.log("C: ", c);
+                      //console.log("N-D: ", numsStr);
+                  }
+              } catch (error){
+                  $("#gera_PDF").attr("disabled","disabled");
+                  $('#litResultado').html('Local não encontrado!');
+                  return;
+              }
+
+              numsStr = numsStr.substr(1);
+              //console.log("N-F: ",numsStr);
+
+              var totalParcial = numsStr  / consumo;
+
+              totalCombustivel = totalParcial * preco;
+
+              totalCombustivel = totalCombustivel ? "<br /><strong>Gasto com Combustível</strong>: R$ "+totalCombustivel.toFixed(2) : "";
+
+              //melhorias a fazer
+              //totalCombustivel = totalCombustivel.replace(/./g, ",");
+
+              //Se o status for OK
+              //Endereço de origem = response.originAddresses
+              //Endereço de destino = response.destinationAddresses
+              //Distância = response.rows[0].elements[0].distance.text
+              //Duração = response.rows[0].elements[0].duration.text
+              origem = response.originAddresses;
+              destino = response.destinationAddresses;
+
+              $('#litResultado').html("<strong>Origem</strong>: " + response.originAddresses +
+                                      "<br /><strong>Destino:</strong> " + response.destinationAddresses +
+                                      "<br /><strong>Distância</strong>: " + response.rows[0].elements[0].distance.text +
+                                      " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text + totalCombustivel
+                                    );
+
+              //Atualizar o mapa
+              $( "#mapa1" ).hide();
+              $( "#mapa2" ).show();
+              $("#gera_PDF").removeAttr("disabled");
+              $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
+          }
+      }
+  }
 
 
