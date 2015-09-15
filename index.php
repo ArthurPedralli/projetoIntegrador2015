@@ -91,7 +91,7 @@ include("menu.php");
 		          		$im = imagegrabscreen();
 						imagepng($im, "imagem.png");
 						/*imagedestroy($im);*/
-						$to_crop_array = array('x' =>100 , 'y' => 123, 'width' => 1000, 'height'=> 560);
+						$to_crop_array = array('x' =>100 , 'y' => 112, 'width' => 1000, 'height'=> 560);
 						$thumb_im = imagecrop($im, $to_crop_array);
 						imagejpeg($thumb_im, 'imagem.png', 100);
 
