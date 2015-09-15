@@ -90,10 +90,9 @@ include("menu.php");
 		          	<?php 
 		          		$im = imagegrabscreen();
 						imagepng($im, "imagem.png");
-						/*imagedestroy($im);*/
 						$to_crop_array = array('x' =>100 , 'y' => 112, 'width' => 1000, 'height'=> 560);
 						$thumb_im = imagecrop($im, $to_crop_array);
-						imagejpeg($thumb_im, 'imagem.png', 100);
+						imagepng($thumb_im, 'imagem.png', 100);
 
 
 						/*include_once("lib/mpdf60/mpdf.php");
