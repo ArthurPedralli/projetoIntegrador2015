@@ -6,7 +6,7 @@
   var totalCombustivel;
 
   function initialize() {
-    $("#gera_PDF").attr("disabled","disabled");
+    $("#gera_PDF").hide();
      var mapOptions = {
         center: new google.maps.LatLng(-12.456697, -52.082667),
         zoom: 4,
@@ -136,7 +136,7 @@
               //Atualizar o mapa
               $( "#mapa1" ).hide();
               $( "#mapa2" ).show();
-              $("#gera_PDF").removeAttr("disabled");
+              $("#gera_PDF").show();
               $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
           }
       }

@@ -4,9 +4,12 @@
 	
 	include_once("lib/mpdf60/mpdf.php");
 
+	$html.="<div>
+				<img src='imagem.jpeg'>
+			</div>";
+
 	$mpdf = new mPDF();
-	$html = "<img src='imagem.png'> ";
-	
+	$mpdf->AddPage('L');
 	$mpdf->WriteHTML($html);
 	$mpdf->Output();
 	$mpdf->Open();

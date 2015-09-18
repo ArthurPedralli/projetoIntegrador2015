@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php 
+    $x = unlink('C:/xampp/htdocs/projetoIntegrador2015/imagem.png');
+    echo $x."</br>";
+ ?>
+
+<!-- <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -77,3 +82,4 @@
         </div>
 </body>
 </html>
+ -->

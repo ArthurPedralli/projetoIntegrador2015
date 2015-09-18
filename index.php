@@ -48,7 +48,7 @@ include("menu.php");
 					</div>
 				</div>
 
-
+				</br>
 				<div class="row">
 					<div class="col-md-12">
 						<div class= "col-md-6">
@@ -56,8 +56,9 @@ include("menu.php");
 						</div>
 						<form method="POST">
 							<div class= "col-md-6">
-								<input type="button" value="Imprimir" id="gera_PDF" class="btn btn-default pull-right" 
-								data-target="#mapa" /> 
+								<a href="http://localhost/projetoIntegrador2015/geraPDF.php" target="_blank">
+									<input type="button" value="Salvar Resultados" id="gera_PDF" class="btn btn-default pull-right" data-target="#mapa"/> 
+								</a>
 							</div>
 						</form>
 					</div>
@@ -88,19 +89,13 @@ include("menu.php");
 		      $('#gera_PDF').click(function(){
 
 		          	<?php 
+						include_once("lib/mpdf60/mpdf.php");
 		          		$im = imagegrabscreen();
-						imagepng($im, "imagem.png");
+						imagejpeg($im, "imagem.jpeg");
 						$to_crop_array = array('x' =>100 , 'y' => 112, 'width' => 1000, 'height'=> 560);
 						$thumb_im = imagecrop($im, $to_crop_array);
-						imagepng($thumb_im, 'imagem.png', 100);
-
-
-						/*include_once("lib/mpdf60/mpdf.php");
-						$mpdf = new mPDF();
-						$mpdf->WriteHTML('Olá');
-						$mpdf->Output();
-						$mpdf->Open();
-						exit;*/
+						imagejpeg($thumb_im, 'imagem.jpeg');
+						
 		            ?>
 		      });
 		});
