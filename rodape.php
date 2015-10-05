@@ -11,7 +11,6 @@
 	    	<p>
 	  			CalculeSuaRota.com - Todos os direitos reservados 2015
 	  		</p>
-	    	
 		</div>
 	</div>
 </body>

@@ -1,7 +1,5 @@
 
 <?php
-
-	
 	include_once("lib/mpdf60/mpdf.php");
 
 	$html.="<div>

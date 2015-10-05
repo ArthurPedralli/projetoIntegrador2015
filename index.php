@@ -42,8 +42,7 @@ include("menu.php");
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<div class= "col-md-6">
-							<a href="#botaoCalcular"><input id="botaoCalcular" type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" data-target="#mapa"/></a>
-<!-- 						<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" onclick="CalculaDistancia()" autocomplete="off">Calcular</button>-->
+							<input id="botaoCalcular" type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" data-target="#mapa"/>
 						</div>
 					</div>
 				</div>
@@ -51,16 +50,7 @@ include("menu.php");
 				</br>
 				<div class="row">
 					<div class="col-md-12">
-						<div class= "col-md-6">
-							<div><span id="litResultado">&nbsp;</span></div>
-						</div>
-						<form method="POST">
-							<div class= "col-md-6">
-								<a href="http://localhost/projetoIntegrador2015/geraPDF.php" target="_blank">
-									<input type="button" value="Salvar Resultados" id="gera_PDF" class="btn btn-default pull-right" data-target="#mapa"/> 
-								</a>
-							</div>
-						</form>
+						<span id="litResultado">&nbsp;</span>
 					</div>
 				</div>
 
@@ -83,24 +73,6 @@ include("menu.php");
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-		      $('#gera_PDF').click(function(){
-
-		          	<?php 
-						include_once("lib/mpdf60/mpdf.php");
-		          		$im = imagegrabscreen();
-						imagejpeg($im, "imagem.jpeg");
-						$to_crop_array = array('x' =>100 , 'y' => 112, 'width' => 1000, 'height'=> 560);
-						$thumb_im = imagecrop($im, $to_crop_array);
-						imagejpeg($thumb_im, 'imagem.jpeg');
-						
-		            ?>
-		      });
-		});
-	</script>
-
 
 <?php
 include("rodape.php");

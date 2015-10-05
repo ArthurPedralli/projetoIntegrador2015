@@ -6,7 +6,6 @@
   var totalCombustivel;
 
   function initialize() {
-    $("#gera_PDF").hide();
      var mapOptions = {
         center: new google.maps.LatLng(-12.456697, -52.082667),
         zoom: 4,
@@ -16,14 +15,10 @@
    mapOptions); 
   }
   google.maps.event.addDomListener(window, 'load', initialize);
-    
-  /*$(document).ready(function(){
-      $('#gera_PDF').click(function(){
-          window.open('geraPDF.php?origem='+origem+'&destino='+destino+
-              '&consumo='+consumo+'&preco='+preco+'&totalCombustivel='+totalCombustivel+'');
-      });
-  });*/
 
+  function geraImagem(){
+    window.open("http://localhost/projetoIntegrador2015/geraImagem.php", '_blank');
+  }
 
   function CalculaDistancia() {
 
@@ -102,7 +97,6 @@
                       //console.log("N-D: ", numsStr);
                   }
               } catch (error){
-                  $("#gera_PDF").attr("disabled","disabled");
                   $('#litResultado').html('Local não encontrado!');
                   return;
               }
@@ -114,7 +108,7 @@
 
               totalCombustivel = totalParcial * preco;
 
-              totalCombustivel = totalCombustivel ? "<br /><strong>Gasto com Combustível</strong>: R$ "+totalCombustivel.toFixed(2) : "";
+              totalCombustivel = totalCombustivel ? "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-usd' style='color:red' aria-hidden='true'></span> R$ "+totalCombustivel.toFixed(2) : "";
 
               //melhorias a fazer
               //totalCombustivel = totalCombustivel.replace(/./g, ",");
@@ -125,21 +119,28 @@
               //Distância = response.rows[0].elements[0].distance.text
               //Duração = response.rows[0].elements[0].duration.text
               origem = response.originAddresses;
-              destino = response.destinationAddresses;
+              destino = response.destinationAddresses; 
 
-              $('#litResultado').html("<strong>Origem</strong>: " + response.originAddresses +
-                                      "<br /><strong>Destino:</strong> " + response.destinationAddresses +
-                                      "<br /><strong>Distância</strong>: " + response.rows[0].elements[0].distance.text +
-                                      " <br /><strong>Duração</strong>: " + response.rows[0].elements[0].duration.text + totalCombustivel
+              $('#litResultado').html("<h4><span class='glyphicon glyphicon-map-marker' style='color:green' aria-hidden='true'></span> " + response.originAddresses +
+                                      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-map-marker' style='color:red' aria-hidden='true'></span> " + response.destinationAddresses +
+                                      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-road' style='color:red' aria-hidden='true'></span> " + response.rows[0].elements[0].distance.text +
+                                      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-time' style='color:red' aria-hidden='true'></span> " + response.rows[0].elements[0].duration.text + 
+                                      totalCombustivel +
+                                      "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id='myLink' href='javascript:geraImagem();'><span class='glyphicon glyphicon-floppy-disk' aria-hidden='true'></span> Salvar</a></h4><br>" 
                                     );
 
               //Atualizar o mapa
               $( "#mapa1" ).hide();
               $( "#mapa2" ).show();
-              $("#gera_PDF").show();
+              $("html, body").delay(2000).animate({scrollTop: $('#litResultado').offset().top }, 2000);
+              /*$("html, body").animate({
+                  scrollTop: $(document).height()
+              },1000);*/
               $("#map").attr("src", "https://maps.google.com/maps?saddr=" + response.originAddresses + "&daddr=" + response.destinationAddresses + "&output=embed");
           }
       }
   }
+
+  
 
 
