@@ -42,7 +42,8 @@ include("menu.php");
 				<div class="row">
 					<div class="col-md-12 form-group">
 						<div class= "col-md-6">
-							<input id="botaoCalcular" type="button" value="Calcular distância" onclick="CalculaDistancia()" class="btn btn-success" data-target="#mapa"/>
+							<!-- <input id="botaoCalcular" type="button" class="btn btn-success" value="Calcular distância" onclick="CalculaDistancia()"  data-target="#mapa"/> -->
+							<button id="botaoCalcular" type="submit" class="btn btn-success" onclick="CalculaDistancia()" >Calcular distância</button>
 						</div>
 					</div>
 				</div>

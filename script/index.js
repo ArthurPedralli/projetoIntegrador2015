@@ -42,7 +42,8 @@
       return;
     };
 
-    $('#litResultado').html('Aguarde...');
+   /* $('#litResultado').html('Aguarde...');*/
+    $('#botaoCalcular').text('Calculando...').attr('disabled','disabled');
 
     //Instanciar o DistanceMatrixService
     var service = new google.maps.DistanceMatrixService();
@@ -98,6 +99,7 @@
                   }
               } catch (error){
                   $('#litResultado').html('Local não encontrado!');
+                  $('#botaoCalcular').text('Calcular distância').removeAttr("disabled");
                   return;
               }
 
@@ -132,6 +134,7 @@
               //Atualizar o mapa
               $( "#mapa1" ).hide();
               $( "#mapa2" ).show();
+              $('#botaoCalcular').text('Calcular distância').removeAttr("disabled");
               $("html, body").delay(2000).animate({scrollTop: $('#litResultado').offset().top }, 2000);
               /*$("html, body").animate({
                   scrollTop: $(document).height()
