@@ -123,7 +123,7 @@
               origem = response.originAddresses;
               destino = response.destinationAddresses; 
 
-              $('#litResultado').html("<h4><span class='glyphicon glyphicon-map-marker' style='color:green' aria-hidden='true'></span> " + response.originAddresses +
+              $('#litResultado').html("</br><h4><span class='glyphicon glyphicon-map-marker' style='color:green' aria-hidden='true'></span> " + response.originAddresses +
                                       "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-map-marker' style='color:red' aria-hidden='true'></span> " + response.destinationAddresses +
                                       "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-road' style='color:red' aria-hidden='true'></span> " + response.rows[0].elements[0].distance.text +
                                       "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-time' style='color:red' aria-hidden='true'></span> " + response.rows[0].elements[0].duration.text + 

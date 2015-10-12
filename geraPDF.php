@@ -2,13 +2,7 @@
 <?php
 	include_once("lib/mpdf60/mpdf.php");
 
-	$html.="
-				<p style='font-size: 30px;
-						  color:red; 
-						  font-family: 'Times New Roman';'
-					align='center'>
-				 	calculesuarota.com
-				</p>
+	$html.="	<img src='calculesuarota.com.png' style='margin-left: 250px;'>
 				<img src='imagem.jpeg'>
 			";
 

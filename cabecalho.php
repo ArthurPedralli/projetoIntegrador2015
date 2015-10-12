@@ -16,5 +16,5 @@
 	</style>
 
 </head>
-<body>
+<body style="width: 98%;">
 	<div class="container">
