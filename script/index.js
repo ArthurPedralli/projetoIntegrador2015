@@ -1,4 +1,17 @@
 
+$(document).ready(function(){
+  $( "#myForm" ).validate({
+    rules: {
+      txtOrigem:"required",
+      txtDestino:"required",
+    },
+    messages : {
+      txtOrigem:"* Campo Obrigatório",
+      txtDestino:"* Campo Obrigatório",
+    }
+  });
+});
+
   var consumo;
   var destino;
   var preco; 

@@ -3,13 +3,13 @@
 	margin-top: 70px;	
 }
 
-#txtOrigem:focus {
+/*#txtOrigem:focus {
     border-color:red;
 }
 
 #txtDestino:focus {
     border-color:red;
-}
+}*/
 
 #mapa{
 	 width: 100%;
