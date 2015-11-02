@@ -19,7 +19,7 @@
                 <li><a href="./dicasSeguranca.php">Dicas Sobre Segurança</a></li>
 	          	</ul>
 	            <ul class="nav navbar-nav navbar-right">
-	            	<li><a class="link" data-toggle="modal" data-target="#myModal">Dúvidas e Segustões</a></li>
+	            	<li><a class="link" data-toggle="modal" data-target="#myModal">Dúvidas e Sugestões</a></li>
 	            </ul>
 	        </div>
 	    </div>
